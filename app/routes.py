@@ -24,7 +24,7 @@ def index():
         robot = f"Robotz Form"
         assunto = "Notificação de Formulário"
         destinatario = "nicholas@robotz.dev"
-        formatted_message = form.message.data.replace('\n', '<br>')
+        formatted_message = form.Message.data.replace('\n', '<br>')
         mensagem = f""" <h1>Alguém preencheu seu formulário!</h1>
                         <br>
                         <h3>De: {form.full_name.data} </h3>
@@ -36,7 +36,8 @@ def index():
         msg = Message(assunto, sender=robot, recipients=[
                       destinatario], html=mensagem)
         mail.send(msg)
-        session["message"] = f'Sua mensagem foi enviada!'
+        session["message"] = 'Sua mensagem foi enviada!'
+        flash('Sua mensagem foi enviada!', "success")
         return redirect(url_for("index"))
 
     return render_template("index.html", form=form, message=session.get("message", ""))
