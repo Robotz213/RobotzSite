@@ -1,0 +1,13 @@
+Flask
+flask-jwt-extended
+Flask-sqlalchemy
+flask-bcrypt
+Flask-form
+Flask-WTF
+Flask-Mail
+selenium
+webdriver_manager
+flask-marshmallow
+python-dotenv
+flask_mysqldb
+mysql-connector-python
