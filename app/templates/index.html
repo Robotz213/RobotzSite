@@ -35,9 +35,9 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
+                        href="#SobreMin">Sobre Min</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#SobreMin">Sobre Min</a></li>
+                            href="#portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                             href="#Contate-Me">Contate - Me</a></li>
                 </ul>
@@ -49,7 +49,7 @@
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
             <img class="masthead-avatar mb-5" src="{{ url_for('static', filename = 'assets/img/avatar.png' ) }}"
-                alt="..." style="width: 375px;"/>
+                alt="..." style="width: 375px;" />
             <!-- Masthead Heading-->
             <h1 class="masthead-heading text-uppercase mb-0">RobotzDev</h1>
             <!-- Icon Divider-->
@@ -62,13 +62,47 @@
             <p class="masthead-subheading font-weight-light mb-0">Python | Flask | Bootstrap</p>
         </div>
     </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
+    <!-- SobreMin Section-->
+    <section class="page-section text-black mb-0" id="SobreMin">
         <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- SobreMin Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary">SobreMin</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- SobreMin Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">Sou apaixonado por tecnologia e programação, sempre buscando aprimorar minhas
+                        habilidades e me manter atualizado com as últimas tendências e inovações. Meu compromisso com a
+                        excelência e a aprendizagem contínua me torna um valioso integrante para qualquer equipe de
+                        desenvolvimento.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">Tenho forte habilidade para trabalhar em equipe, colaborando e contribuindo com
+                        soluções eficazes para desafios complexos. Sempre focado em otimizar processos e entregar
+                        resultados de qualidade.</p>
+                </div>
+            </div>
+            <!-- SobreMin Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-secondary" href="#Contate-Me">
+                    <i class="fa-brands fa-wpforms"></i>
+                    Entrar em contato
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section-->
+    <section class="page-section bg-secondary portfolio text-white" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
@@ -84,7 +118,8 @@
                                     class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/shortPy.png' ) }}" alt="..." style="width: 400px; height: 289px"/>
+                            src="{{ url_for('static', filename = 'assets/img/portfolio/shortPy.png' ) }}" alt="..."
+                            style="width: 400px; height: 289px" />
                     </div>
                 </div>
                 <!-- Portfolio Item 2-->
@@ -147,40 +182,6 @@
                             src="{{ url_for('static', filename = 'assets/img/portfolio/submarine.png' ) }}" alt="..." />
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- SobreMin Section-->
-    <section class="page-section bg-secondary text-white mb-0" id="SobreMin">
-        <div class="container">
-            <!-- SobreMin Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">SobreMin</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- SobreMin Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Sou apaixonado por tecnologia e programação, sempre buscando aprimorar minhas
-                        habilidades e me manter atualizado com as últimas tendências e inovações. Meu compromisso com a
-                        excelência e a aprendizagem contínua me torna um valioso integrante para qualquer equipe de
-                        desenvolvimento.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">Tenho forte habilidade para trabalhar em equipe, colaborando e contribuindo com
-                        soluções eficazes para desafios complexos. Sempre focado em otimizar processos e entregar
-                        resultados de qualidade.</p>
-                </div>
-            </div>
-            <!-- SobreMin Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="#Contate-Me">
-                    <i class="fa-brands fa-wpforms"></i>
-                    Entrar em contato
-                </a>
             </div>
         </div>
     </section>
