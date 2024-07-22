@@ -13,7 +13,7 @@ from typing import Type
 from app import app
 from app import mail
 from app.forms import ContactForm
-
+from app.handler import *
 
 @app.route("/", methods=["GET", "POST"])
 def index():
