@@ -14,11 +14,11 @@ mail = Mail()
 env_vars = {key: os.getenv(key) for key in os.environ}
 
 # Configurações do E-mail
-app.config['MAIL_SERVER'] = env_vars["mail_server"]
+app.config['MAIL_SERVER'] = env_vars["MAIL_SERVER"]
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = env_vars["email"]
-app.config['MAIL_PASSWORD'] = env_vars["password_email"]
+app.config['MAIL_USERNAME'] = env_vars["EMAIL"]
+app.config['MAIL_PASSWORD'] = env_vars["PASSWORD_EMAIL"]
 
 # Configurações do Flask
 app.config['PREFERRED_URL_SCHEME'] = "https"

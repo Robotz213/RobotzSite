@@ -41,3 +41,18 @@ def index():
         return redirect(url_for("index"))
 
     return render_template("index.html", form=form, message=session.get("message", ""))
+
+@app.route("/resume", methods = ["GET"])
+def resume():
+    
+    return render_template("resume.html")
+
+@app.route("/projects", methods = ["GET"])
+def projects():
+    
+    return render_template("projects.html")
+
+@app.route("/contact", methods = ["GET"])
+def contact():
+    
+    return render_template("contact.html")
