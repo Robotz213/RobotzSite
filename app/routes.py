@@ -30,7 +30,7 @@ def projects():
     
     return render_template("projects.html")
 
-@app.route("/contact", methods = ["GET"])
+@app.route("/contact", methods = ["GET", "POST"])
 def contact():
     
     form: Type[ContactForm] = ContactForm()
@@ -44,6 +44,7 @@ def contact():
                         <br>
                         <h3>De: {form.full_name.data} </h3>
                         <h3>Email: {form.email_address.data} </h3>
+                        <h3>Telefone: {form.phone.data} </h3>
                         <h3>Mensage:</h3>
                         <p>{formatted_message}</p>
         """
@@ -53,6 +54,6 @@ def contact():
         mail.send(msg)
         session["message"] = 'Sua mensagem foi enviada!'
         flash('Sua mensagem foi enviada!', "success")
-        return redirect(url_for("index"))
+        return redirect(url_for("contact"))
     
     return render_template("contact.html", form = form)

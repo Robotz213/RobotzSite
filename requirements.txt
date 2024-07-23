@@ -11,3 +11,5 @@ flask-marshmallow
 python-dotenv
 flask_mysqldb
 mysql-connector-python
+phonenumbers
+Bootstrap-Flask
