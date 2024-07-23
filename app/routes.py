@@ -56,4 +56,4 @@ def contact():
         flash('Sua mensagem foi enviada!', "success")
         return redirect(url_for("contact"))
     
-    return render_template("contact.html", form = form)
+    return render_template("contact.html", form = form, message = session.get("message", None))
