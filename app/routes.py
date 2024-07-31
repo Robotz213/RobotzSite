@@ -18,6 +18,21 @@ from app.handler import *
 @app.route("/", methods=["GET", "POST"])
 def index():
 
+    return render_template("index.html")
+
+@app.route("/resume", methods = ["GET"])
+def resume():
+    
+    return render_template("resume.html")
+
+@app.route("/projects", methods = ["GET"])
+def projects():
+    
+    return render_template("projects.html")
+
+@app.route("/contact", methods = ["GET", "POST"])
+def contact():
+    
     form: Type[ContactForm] = ContactForm()
     if form.validate_on_submit():
 
@@ -29,6 +44,7 @@ def index():
                         <br>
                         <h3>De: {form.full_name.data} </h3>
                         <h3>Email: {form.email_address.data} </h3>
+                        <h3>Telefone: {form.phone.data} </h3>
                         <h3>Mensage:</h3>
                         <p>{formatted_message}</p>
         """
@@ -38,6 +54,6 @@ def index():
         mail.send(msg)
         session["message"] = 'Sua mensagem foi enviada!'
         flash('Sua mensagem foi enviada!', "success")
-        return redirect(url_for("index"))
-
-    return render_template("index.html", form=form, message=session.get("message", ""))
+        return redirect(url_for("contact"))
+    
+    return render_template("contact.html", form = form, message = session.get("message", None))

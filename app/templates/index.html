@@ -6,283 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>RobotzDev - Portfolio</title>
+    <title>Nicholas Silva - RobotzDev</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'assets/favicon.ico' ) }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
-        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{{ url_for('static', filename = 'css/styles.css' ) }}" rel="stylesheet" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">RobotzDev</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#SobreMin">Sobre Min</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#Contate-Me">Contate - Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-secondary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="{{ url_for('static', filename = 'assets/img/avatar.png' ) }}"
-                alt="..." style="width: 375px;" />
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">RobotzDev</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Python | Flask | Bootstrap</p>
-        </div>
-    </header>
-    <!-- SobreMin Section-->
-    <section class="page-section text-black mb-0" id="SobreMin">
-        <div class="container">
-            <!-- SobreMin Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary">SobreMin</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- SobreMin Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Sou apaixonado por tecnologia e programação, sempre buscando aprimorar minhas
-                        habilidades e me manter atualizado com as últimas tendências e inovações. Meu compromisso com a
-                        excelência e a aprendizagem contínua me torna um valioso integrante para qualquer equipe de
-                        desenvolvimento.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">Tenho forte habilidade para trabalhar em equipe, colaborando e contribuindo com
-                        soluções eficazes para desafios complexos. Sempre focado em otimizar processos e entregar
-                        resultados de qualidade.</p>
-                </div>
-            </div>
-            <!-- SobreMin Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-secondary" href="#Contate-Me">
-                    <i class="fa-brands fa-wpforms"></i>
-                    Entrar em contato
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Section-->
-    <section class="page-section bg-secondary portfolio text-white" id="portfolio">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Portfolio</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        {% include 'includes/navbar.html' %}
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-5">
+                        <!-- Header text content-->
+                        <div class="text-center text-xxl-start">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                <div class="text-uppercase">Development &middot; Automation</div>
+                            </div>
+                            <div class="fs-3 fw-light text-muted">Ajudando sua empresa com</div>
+                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Softwares e
+                                    Automação Jurídica</span></h1>
+                            <div
+                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                                    href="{{ url_for('resume') }}">Sobre Mim</a>
+                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                                    href="{{ url_for('projects') }}">Projetos</a>
+                            </div>
                         </div>
-                        <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/shortPy.png' ) }}" alt="..."
-                            style="width: 400px; height: 289px" />
                     </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
+                    <div class="col-xxl-7">
+                        <!-- Header profile picture-->
+                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                            <div class="profile bg-gradient-primary-to-secondary">
+                                <img class="profile-img" src="{{ url_for('static', filename = 'assets/profile.png') }}"
+                                    alt="..." />
+                                {% include 'includes/svg.html' %}
+                            </div>
                         </div>
-                        <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/cake.png' ) }}" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/circus.png' ) }}" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/game.png' ) }}" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/safe.png' ) }}" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid"
-                            src="{{ url_for('static', filename = 'assets/img/portfolio/submarine.png' ) }}" alt="..." />
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Contate-Me Section-->
-    <section class="page-section" id="Contate-Me">
-        <div class="container">
-            <!-- Contate-Me Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contate-Me Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <form id="Contate-MeForm" action="{{ url_for('index') }}" method="post">
-                        {{ form.hidden_tag() }}
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            {{ form.full_name(class="form-control", id="name", type="text", placeholder="...") }}
-                            {{ form.full_name.label(for="name") }}
+        </header>
+        <!-- About Section-->
+        <section class="bg-light py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre mim</span></h2>
+                            <p class="lead fw-light mb-4">Olá! Sou Nicholas, desenvolvedor Backend Python.</p>
+                            <p class="text-muted">
+                                Trabalho com tecnologias como Flask, Selenium e Bootstrap. Busco novos desafios que me permitam ajudar empresas a 
+                                aprimorar suas operações com eficiência e inovação.</p>
+                            <div class="d-flex justify-content-center fs-2 gap-4">
+                                <a class="text-gradient" href="https://instagram.com/robotz213"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a class="text-gradient" href="https://www.linkedin.com/in/nicholasazs213"><i
+                                        class="bi bi-linkedin"></i></a>
+                                <a class="text-gradient" href="https://github.com/Robotz213"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
                         </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            {{ form.email_address(class="form-control", id="email", type="email", placeholder="...") }}
-                            {{ form.email_address.label(for="email") }}
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-
-                            {{ form.Message(class="form-control", id="message", type="text", style="height: 10rem",
-                            placeholder="...") }}
-                            {{ form.Message.label(for="message") }}
-
-                        </div>
-                        {{ form.submit(class="btn btn-primary btn-xl", id="submitButton", type="submit") }}
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Minhas Redes Sociais</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://instagram.com/robotz213"><i
-                            class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Robotz213"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1"
-                        href="https://www.linkedin.com/in/nicholas-silva-a75555315/"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                </div>
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4"></h4>
-                    <p class="lead mb-0">
-
-                        <br />
-
-                    </p>
-                </div>
-
-                <!-- Footer SobreMin Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">Sobre esta páginar</h4>
-                    <p class="lead mb-0">
-                        Ela foi construida usando Bootstrap. Caso tenha interesse,
-                        <a href="https://getbootstrap.com">Dê uma olhada Aqui</a>
-                        .
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; <a href="https://github.com/Robotz213" target="_blank"
-                    rel="noopener noreferrer">RobotzDev</a></small></div>
-    </div>
-    {% include 'includes/portfolio-modals.html' %}
-    <!-- Bootstrap core JS-->
+    {% include 'includes/footer.html' %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="{{ url_for('static', filename = 'js/scripts.js' ) }}"></script>
-
+    {{ bootstrap.load_js() }}
 </body>
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-
-{% include 'includes/message.html' %}
-
-<script src="{{url_for('static', filename='js/show_modal.js')}}"></script>
-{% endif %}
-{% endwith %}
 
 </html>
